@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { CartaoModule } from './../components/cartao/cartao.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,8 +15,7 @@ import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.componen
     ListaAniamisComponent,
     AnimalComponent,
     GradeFotosAnimaisComponent,
-    DetalheAnimalComponent,
-
+    DetalheAnimalComponent
   ],
   imports: [
     CommonModule,
