@@ -1,3 +1,5 @@
+import { ReactiveFormsModule } from '@angular/forms';
+import { MensagemModule } from './../components/mensagem/mensagem.module';
 import { RouterModule } from '@angular/router';
 import { CartaoModule } from './../components/cartao/cartao.module';
 import { NgModule } from '@angular/core';
@@ -22,7 +24,10 @@ import { ComentariosComponent } from './detalhe-animal/comentarios/comentarios.c
   imports: [
     CommonModule,
     AnimaisRoutingModule,
-    CartaoModule
+    CartaoModule,
+    MensagemModule,
+    ReactiveFormsModule
   ]
 })
 export class AnimaisModule { }
+
