@@ -1,5 +1,5 @@
 <div *ngIf="comentarios$ | async as comentarios">
-  <ul class="list-unstyled">
+  <ul class="list-unstyled comentario-list">
     <li *ngFor="let comentario of comentarios">
       <p class="text-dark font-weight-bold mr-1">
         {{ comentario.userName }}
@@ -26,7 +26,7 @@
 
       <app-mensagem
       mensagem="Tamanho máximo de 300 caracteres"
-      *ngIf="!!comentarioForm.get('comentario')?.error?.maxlength"
+      *ngIf="!!comentarioForm.get('comentario')?.errors?.['maxLength']"
       >
 
       </app-mensagem>
