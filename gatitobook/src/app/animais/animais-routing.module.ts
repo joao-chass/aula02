@@ -1,3 +1,4 @@
+import { NovoAnimalComponent } from './novo-animal/novo-animal.component';
 import { ListaAniamisComponent } from './lista-aniamis/lista-aniamis.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,6 +12,10 @@ const routes: Routes = [
     resolve: {
       animais: ListaAnimaisResolver,
     }
+  },
+  {
+    path: 'novo',
+    component: NovoAnimalComponent
   },
   {
     path: ':animalId',
